@@ -1,0 +1,199 @@
+header{
+    height: 80px;
+    width:100%
+}
+#menu{
+    position: relative;
+    left:29px;
+    top:34px;
+    float:left;
+}
+#logo
+{
+    position: relative;
+    float: left;
+    top: 32px;
+    left: 48px;
+    height: 30px;
+    width: 142px
+}
+#search
+{
+    position: relative;
+    float:left;
+    top: 40px;
+    left: 136px;
+width: 16px;
+height: 16px;
+}
+#etxts
+{
+    position: relative;
+    float:left;
+    top: 36px;
+    left: 154px;
+width: 49px;
+height: 21px;
+font: 16px/21px Roboto;
+}
+#bell
+{
+    position:relative;
+    top:40px;
+    width: 22px;
+height: 21px;
+float:right;
+right:244px;
+}
+#profile
+{
+    position: relative;
+    top:28px;
+    width: 44px;
+height: 44px;
+float: right;
+right: 148px;
+}
+#name
+{
+    position: relative;
+    top: 40px;
+    width: 68px;
+    height: 21px;
+    float: right;
+    right: 14px
+}
+#arrow
+{
+    position: relative;
+    height: 17px;
+    top: 41px;
+    float: right;
+    width: 36px;
+    left: 83px;
+}
+.sidebar
+{
+    /* background: #FFF3F4 0% 0% no-repeat padding-box; */
+    width: 183px;
+    height: 43px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font: normal normal normal 16px/21px Roboto;
+letter-spacing: 0px;
+color: #C8242F;
+left:53px;
+position:relative;
+
+}
+.icon{
+    width: 23px;
+    height: 23px;
+    margin-left: 17px
+ }
+ .names
+ {
+    margin-left: 12px;
+ }
+ .options
+ {
+    top: 25px;
+    position: relative;
+    float: left;
+    right: 24px;
+    width: 242px;
+    height: 1279px;
+ }
+ #ana
+ {
+    margin-top:10px;
+ }
+ #inb
+ {
+    margin-top:10px;
+ }
+ #his
+ {
+    margin-top:10px;
+ }
+ #user
+ {
+    margin-top:10px;
+ }
+ #set
+ {
+    margin-top:10px; 
+ }
+    /* position: relative; */
+    /* left: 22px; */
+    /* padding-left: 10px;
+    padding-right: 10px; */
+.container
+{   
+    float: left;
+    background-color: whitesmoke;
+    height: 1280px;
+    width: 1250px;
+}
+    
+#head1
+{
+    top: 40px;
+    /* left: 290px; */
+    left: 60px;
+    position: relative;
+    width: 146px;
+    height: 39px;
+    font-size: 30px;
+    /* letter-spacing: 0px; */
+    color: #000000
+}
+
+
+.items
+{
+    display: flex;
+    position: relative;
+    left: 50px;
+    top: 65px;
+    justify-content: space-between;
+    /* margin-left: -20px; */
+   width:1195px;
+   
+}
+.item
+{   
+    display: flex;
+    width: 180px;
+    height: 104px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    justify-content: center;
+    align-items: center;
+}
+#star
+{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+}
+#no
+{
+    width: 77px;
+    font-size: 27px;
+    height: 33px;
+    margin-top: 17px;
+    margin-bottom: 2px;
+}
+#info
+{
+    padding-left: 10px;
+}
+#desc
+{
+    width: 113px;
+    height: 20px;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 17px;
+}
