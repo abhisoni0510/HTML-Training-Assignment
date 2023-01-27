@@ -1,0 +1,91 @@
+.midcontain
+{   
+    display: flex;
+    background: white;
+    position: relative;
+    top: 100px;
+    left: 6%;
+    width: 1110px;
+    height: 400px;
+    justify-content: space-between;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+.graph
+{
+    background-color: white;
+    width: 721px;
+    height: 400px;
+}
+.pie
+{
+    background-color: white;
+    width: 355px;
+    height: 400px
+}
+a{
+    text-decoration: none;
+    color: #ADADAD;
+}
+.sale
+{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between
+}
+#text
+{
+    font-size: 22px;
+}
+.links
+{
+    padding: 10px;
+}
+
+#data-graph
+{
+    width: 680px;
+    height: 300px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+#text1
+{
+    padding-left: 29px;
+    /* padding-top: 21px; */
+    font-size: 22px
+}
+#pie-chart
+{
+    margin-left: 64px;
+}
+.country
+{
+    width: 306px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* padding-left: 23px; */
+    padding-right: -21px;
+    margin-left: 48px
+}
+.radio
+{
+    height: 34px;
+    width: 34px;
+}
+.radco
+{
+    width:120px;
+}
+.ad
+{
+    display: inline-block;
+    margin-bottom: 0px;
+    position: relative;
+    bottom: 10px;
+}
