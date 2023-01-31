@@ -1,0 +1,129 @@
+.main{
+    display: flex;
+    width: 100%;
+    margin:auto;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+}
+#heroimg{
+    border-radius: 50%;
+    width: 38%;
+    height: 38% ;
+    box-shadow: 0px 4px 31px #0000000A;
+    margin-top: 72px;
+    margin-left: 166px;
+    border: 20px solid #FFFFFF;
+}
+.submain{
+    margin-top: 106px;
+    margin-left: 164px;
+
+}
+#header-logo{
+
+    width: 272px;
+    height: 58px;
+}
+#text1{
+    font: 300 40px/47px Roboto;
+    color: #3E3E3E;
+    margin-top: 19px;
+}
+
+#text2{
+    margin-top: 31.5px;
+    font: 25px/33px Roboto;
+    color: #3E3E3E;
+}
+.usrnamepass{
+    width: 77%;
+    height: 21px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding: 14.5px;
+    font: 15px/20px Roboto;
+}
+#usrname{
+    margin-top: 23px;
+}
+#passwd{
+    margin-top: 27px;
+}
+.blfp{
+    display: flex;
+    width: 83%;
+}
+#login{
+
+    width: 138px;
+    height: 45px;
+    border-color: #C8242F;
+    border-radius: 23px;
+    background: #C8242F;
+    font:18px/24px Roboto;
+    color: #FFFFFF;
+    margin-top:30px
+}
+
+#fp{
+    color: #ADADAD;
+    margin-top: 42px;
+    margin-left: 170px;
+    font: 15px/20px Roboto;
+}
+#newMember{
+    color: #ADADAD;
+    font: 15px/20px Roboto;
+
+    text-decoration: none;
+}
+
+#register{
+    color: #C8242F;
+}
+#nr{
+    margin-top: 23px;
+    margin-left: 5px;
+}
+@media screen and (max-width:1200px) {
+    .submain{
+        margin-left: 9%;
+        width: 300px;
+
+    }
+    #heroimg{
+        margin-left: 0px;
+        width: 50%;
+        height: 50%;
+    }
+ }
+
+ @media screen and (max-width:830px) {
+    .main{
+        flex-direction: column;
+    }
+    .submain{
+        margin-left: 30%;
+        width: 300px;
+
+    }
+    #heroimg{
+        margin-left: 25%;
+        width: 50%;
+        height: 50%;
+    }
+ }
+ @media screen and (max-width:436px) {
+    .main{
+        flex-direction: column;
+    }
+    .submain{
+        margin-left: 10%;
+        width: 300px;
+
+    }
+    #heroimg{
+        margin-left: 10%;
+        width: 50%;
+        height: 50%;
+    }
+ }

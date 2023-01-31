@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dashboard.css">
-    <title>Document</title>
-    
+    <link rel="stylesheet" href="css\dashboard.css">
+    <title>Dashboard</title>
+    <script>
+        function dis(){
+            if(document.getElementById('check').checked==false){
+                document.getElementById('aside').style.display = 'none';
+            }else{
+                document.getElementById('aside').style.display = 'flex';
+            }
+        }
+    </script>
 </head>
 <body>
-    <header class="">
-        <img src="images\menu-bar.svg" alt="" id="menu">
-        <img src="images\logo.svg" alt="" id="logo">
-        <img src="images\search-icon.svg" alt="" id="search">
-        <div id="etxts">Search</div>
-        <img src="images\notification-icon.svg" alt="" id="bell">
-        <img src="images\profile.png" alt="" id="profile">
-        <div id="name">Jhon Doe</div>
-        <img src="images\downward-arrow.svg" alt="" id="arrow">
+    <header class="header">
+        <div class="icon1">
+            <input type="checkbox" id="check" hidden>
+            <label for="check">
+            <a onclick="dis()"><img src="images\menu-bar.svg" alt="" id="m"></a></label>
+            <img src="images\logo.svg" alt="logo" id="l">
+            <img src="images\search-icon.svg" alt="search-icon" id="s">
+            <input type="search" placeholder="Search" id="se">
+        </div>
+        <div class="icon2">
+            <img src="images\notification-icon.svg" alt="notification-icon" id="noti">
+            <img src="images\profile.png" alt="profile" id="pro">
+            <div id="usrname">John Doe</div>
+            <img src="images\downward-arrow.svg" alt="" id="dwarr">
+        </div>
+        
     </header>
-<div class="asi-con">
-    <aside class="options">
+    <div class="asi-con">
+
+    <aside class="options" id="aside">
         <div class="sidebar" style=" background: #FFF3F4 0% 0% no-repeat padding-box;">
            <a href="#" id="asi"><img src="images\dashboard-active.svg" alt="dashboard" class="icon" >Dashboard</a>
         </div> 
 
-        <div class="sidebar" style=" background: #FFF3F4 0% 0% no-repeat padding-box;">
-            <a href="#" id="asi"><img src="images\graph-default.svg" alt="Analysis" alt="dashboard" class="icon" >Analysis</a>
+        <div class="sidebar" style=" background: white 0% 0% no-repeat padding-box;">
+            <a href="#" id="asi1"><img src="images\graph-default.svg" alt="Analysis" alt="dashboard" class="icon" >Analysis</a>
          </div> 
 
-         <div class="sidebar" style=" background: #FFF3F4 0% 0% no-repeat padding-box;">
-            <a href="#" id="asi"><img src="images\inbox-default.svg" alt="dashboard" class="icon" >Inbox</a>
+         <div class="sidebar" style=" background: white 0% 0% no-repeat padding-box;">
+            <a href="#" id="asi1"><img src="images\inbox-default.svg" alt="dashboard" class="icon" >Inbox</a>
          </div> 
 
-         <div class="sidebar" style=" background: #FFF3F4 0% 0% no-repeat padding-box;">
-            <a href="#" id="asi"><img src="images\clock-default.svg" alt="dashboard" class="icon" >History</a>
+         <div class="sidebar" style=" background: white 0% 0% no-repeat padding-box;">
+            <a href="#" id="asi1"><img src="images\clock-default.svg" alt="dashboard" class="icon" >History</a>
          </div> 
 
-         <div class="sidebar" style=" background: #FFF3F4 0% 0% no-repeat padding-box;">
-            <a href="#" id="asi"><img src="images\user-default.svg" alt="dashboard" class="icon" >Users</a>
+         <div class="sidebar" style=" background: white 0% 0% no-repeat padding-box;">
+            <a href="#" id="asi1"><img src="images\user-default.svg" alt="dashboard" class="icon" >Users</a>
          </div> 
 
-         <div class="sidebar" style=" background: #FFF3F4 0% 0% no-repeat padding-box;">
-            <a href="#" id="asi"><img src="images\maintenance-default.svg" alt="dashboard" class="icon" >Maintence</a>
+         <div class="sidebar" style=" background: white 0% 0% no-repeat padding-box;">
+            <a href="#" id="asi1"><img src="images\maintenance-default.svg" alt="dashboard" class="icon" >Maintence</a>
          </div> 
 
-         <div class="sidebar" style=" background: #FFF3F4 0% 0% no-repeat padding-box;">
-            <a href="#" id="asi"><img src="images\setting-default.svg" alt="dashboard" class="icon" >Settings</a>
+         <div class="sidebar" style=" background: white 0% 0% no-repeat padding-box;">
+            <a href="#" id="asi1"><img src="images\setting-default.svg" alt="dashboard" class="icon" >Settings</a>
          </div> 
        
     </aside>
-
     <div class="container">
         <div id="head1">Dashboard</div>
 
@@ -166,74 +181,87 @@
                             <td class="am"> <div class="hw">$10,570</div> </th>
                         </tr>
                         <tr>
-                            <td class="inv" > <div class="hw">INVOICE</div> </th>
-                            <td class="co" > <div class="hw"> COMPANY NAME</div> </th>
-                            <td class="em" > <div class="hw">EMAIL</div> </th>
-                            <td class="du" > <div class="hw">DUE DATE</div> </th>
-                            <td class="st" > <div class="hw">STATUS</div> </th>
-                            <td class="am"> <div class="hw">AMOUNT</div> </th>
-                        </tr>                <tr>
-                            <td class="inv" > <div class="hw">INVOICE</div> </th>
-                            <td class="co" > <div class="hw"> COMPANY NAME</div> </th>
-                            <td class="em" > <div class="hw">EMAIL</div> </th>
-                            <td class="du" > <div class="hw">DUE DATE</div> </th>
-                            <td class="st" > <div class="hw">STATUS</div> </th>
-                            <td class="am"> <div class="hw">AMOUNT</div> </th>
-                        </tr>                <tr>
-                            <td class="inv" > <div class="hw">INVOICE</div> </th>
-                            <td class="co" > <div class="hw"> COMPANY NAME</div> </th>
-                            <td class="em" > <div class="hw">EMAIL</div> </th>
-                            <td class="du" > <div class="hw">DUE DATE</div> </th>
-                            <td class="st" > <div class="hw">STATUS</div> </th>
-                            <td class="am"> <div class="hw">AMOUNT</div> </th>
-                        </tr>                <tr>
-                            <td class="inv" > <div class="hw">INVOICE</div> </th>
-                            <td class="co" > <div class="hw"> COMPANY NAME</div> </th>
-                            <td class="em" > <div class="hw">EMAIL</div> </th>
-                            <td class="du" > <div class="hw">DUE DATE</div> </th>
-                            <td class="st" > <div class="hw">STATUS</div> </th>
-                            <td class="am"> <div class="hw">AMOUNT</div> </th>
-                        </tr>                <tr>
-                            <td class="inv" > <div class="hw">INVOICE</div> </th>
-                            <td class="co" > <div class="hw"> COMPANY NAME</div> </th>
-                            <td class="em" > <div class="hw">EMAIL</div> </th>
-                            <td class="du" > <div class="hw">DUE DATE</div> </th>
-                            <td class="st" > <div class="hw">STATUS</div> </th>
-                            <td class="am"> <div class="hw">AMOUNT</div> </th>
-                        </tr>                <tr>
-                            <td class="inv" > <div class="hw">INVOICE</div> </th>
-                            <td class="co" > <div class="hw"> COMPANY NAME</div> </th>
-                            <td class="em" > <div class="hw">EMAIL</div> </th>
-                            <td class="du" > <div class="hw">DUE DATE</div> </th>
-                            <td class="st" > <div class="hw">STATUS</div> </th>
-                            <td class="am"> <div class="hw">AMOUNT</div> </th>
-                        </tr>                <tr>
-                            <td class="inv" > <div class="hw">INVOICE</div> </th>
-                            <td class="co" > <div class="hw"> COMPANY NAME</div> </th>
-                            <td class="em" > <div class="hw">EMAIL</div> </th>
-                            <td class="du" > <div class="hw">DUE DATE</div> </th>
-                            <td class="st" > <div class="hw">STATUS</div> </th>
-                            <td class="am"> <div class="hw">AMOUNT</div> </th>
-                        </tr>                <tr>
-                            <td class="inv" > <div class="hw">INVOICE</div> </th>
-                            <td class="co" > <div class="hw"> COMPANY NAME</div> </th>
-                            <td class="em" > <div class="hw">EMAIL</div> </th>
-                            <td class="du" > <div class="hw">DUE DATE</div> </th>
-                            <td class="st" > <div class="hw">STATUS</div> </th>
-                            <td class="am"> <div class="hw">AMOUNT</div> </th>
+                            <td class="inv" > <div class="hw">558612</div> </th>
+                            <td class="co" > <div class="hw"> Other</div> </th>
+                            <td class="em" > <div class="hw">jessica.hanson@example.com</div> </th>
+                            <td class="du" > <div class="hw">24 May, 2020</div> </th>
+                            <td class="st" > <div class="hw"><span class="high">Paid</span></div> </th>
+                            <td class="am"> <div class="hw">$98,000</div> </th>
+                        </tr>   
+                    
+                         <tr>
+                            <td class="inv" > <div class="hw">558612</div> </th>
+                            <td class="co" > <div class="hw"> Vendor</div> </th>
+                            <td class="em" > <div class="hw">alma.lawson@example.com</div> </th>
+                            <td class="du" > <div class="hw">8 Sep, 2020</div> </th>
+                            <td class="st" > <div class="hw"><span class="high">Paid</span></div> </th>
+                            <td class="am"> <div class="hw">$20,900</div> </th>
+                        </tr>  
+           
+
+                        <tr>
+                            <td class="inv" > <div class="hw">558612</div> </th>
+                            <td class="co" > <div class="hw"> Property Management CompanyE</div> </th>
+                            <td class="em" > <div class="hw">kenzi.lawson@example.com</div> </th>
+                            <td class="du" > <div class="hw">22 Oct, 2020</div> </th>
+                            <td class="st" > <div class="hw"><span class="high">Paid</span></div> </th>
+                            <td class="am"> <div class="hw">$10,570</div> </th>
+                        </tr>   
+
+                         <tr>
+                            <td class="inv" > <div class="hw">651535</div> </th>
+                            <td class="co" > <div class="hw"> Subcontractor Company</div> </th>
+                            <td class="em" > <div class="hw">jackson.graham@example.com</div> </th>
+                            <td class="du" > <div class="hw">22 Oct, 2020</div> </th>
+                            <td class="st" > <div class="hw"><span class="fd">Failed</span></div> </th>
+                            <td class="am"> <div class="hw">$10,200</div> </th>
+                        </tr>                
+                        <tr>
+                            <td class="inv" > <div class="hw">653518</div> </th>
+                            <td class="co" > <div class="hw"> Mortgage Company</div> </th>
+                            <td class="em" > <div class="hw">felicia.reid@example.com</div> </th>
+                            <td class="du" > <div class="hw">22 Oct, 2020</div> </th>
+                            <td class="st" > <div class="hw"><span class="pd">Pending</span></div> </th>
+                            <td class="am"> <div class="hw">$10,200</div> </th>
+                        </tr>  
+       
+                         <tr>
+                            <td class="inv" > <div class="hw">487441</div> </th>
+                            <td class="co" > <div class="hw"> TPA</div> </th>
+                            <td class="em" > <div class="hw">dolores.chambers@example.com</div> </th>
+                            <td class="du" > <div class="hw">21 Sep, 2020</div> </th>
+                            <td class="st" > <div class="hw"><span class="high">Paid</span></div> </th>
+                            <td class="am"> <div class="hw">$11,170</div> </th>
+                        </tr>  
+              
+                         <tr>
+                            <td class="inv" > <div class="hw">267400</div> </th>
+                            <td class="co" > <div class="hw"> Fire Department</div> </th>
+                            <td class="em" > <div class="hw">nevaeh.simmons@example.com</div> </th>
+                            <td class="du" > <div class="hw">17 Oct, 2020</div> </th>
+                            <td class="st" > <div class="hw"><span class="fd">Failed</span></div> </th>
+                            <td class="am"> <div class="hw">$28,000</div> </th>
+                        </tr>                
+                 
+                        <tr>
+                            <td class="inv" > <div class="hw">449003</div> </th>
+                            <td class="co" > <div class="hw"> Insurance Carrier</div> </th>
+                            <td class="em" > <div class="hw">curtis.weaver@example.com</div> </th>
+                            <td class="du" > <div class="hw">21 Sep, 2020</div> </th>
+                            <td class="st" > <div class="hw"><span class="high">Paid</span></div> </th>
+                            <td class="am"> <div class="hw">$10,000</div> </th>
                         </tr>
                     </tbody>
                 </table>
             </div>
            
+            
         </div>
         
 
 
     </div>
+</div>
 
-</div> 
-    
- 
 </body>
 </html>
