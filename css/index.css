@@ -1,10 +1,10 @@
-.main{
+.imgfor{
     display: flex;
     width: 100%;
     margin:auto;
     background: #FAFAFA 0% 0% no-repeat padding-box;
 }
-#heroimg{
+#himg{
     border-radius: 50%;
     width: 38%;
     height: 38% ;
@@ -18,23 +18,23 @@
     margin-left: 164px;
 
 }
-#header-logo{
+#headlogo{
 
     width: 272px;
     height: 58px;
 }
-#text1{
+#txt-1{
     font: 300 40px/47px Roboto;
     color: #3E3E3E;
     margin-top: 19px;
 }
 
-#text2{
+#txt-2{
     margin-top: 31.5px;
     font: 25px/33px Roboto;
     color: #3E3E3E;
 }
-.usrnamepass{
+.name-pass{
     width: 77%;
     height: 21px;
     border: 1px solid #ADADAD;
@@ -42,17 +42,17 @@
     padding: 14.5px;
     font: 15px/20px Roboto;
 }
-#usrname{
+#usr{
     margin-top: 23px;
 }
-#passwd{
+#pwd{
     margin-top: 27px;
 }
 .blfp{
     display: flex;
     width: 83%;
 }
-#login{
+#lbtn{
 
     width: 138px;
     height: 45px;
@@ -70,7 +70,7 @@
     margin-left: 170px;
     font: 15px/20px Roboto;
 }
-#newMember{
+#Member{
     color: #ADADAD;
     font: 15px/20px Roboto;
 
@@ -80,7 +80,7 @@
 #register{
     color: #C8242F;
 }
-#nr{
+#info{
     margin-top: 23px;
     margin-left: 5px;
 }
@@ -90,7 +90,7 @@
         width: 300px;
 
     }
-    #heroimg{
+    #himg{
         margin-left: 0px;
         width: 50%;
         height: 50%;
@@ -98,7 +98,7 @@
  }
 
  @media screen and (max-width:830px) {
-    .main{
+    .imgfor{
         flex-direction: column;
     }
     .submain{
@@ -106,24 +106,21 @@
         width: 300px;
 
     }
-    #heroimg{
+    #himg{
         margin-left: 25%;
         width: 50%;
         height: 50%;
     }
  }
  @media screen and (max-width:436px) {
-    .main{
-        flex-direction: column;
-    }
+  
     .submain{
         margin-left: 10%;
         width: 300px;
 
     }
-    #heroimg{
+    #himg{
         margin-left: 10%;
-        width: 50%;
-        height: 50%;
+       
     }
  }
